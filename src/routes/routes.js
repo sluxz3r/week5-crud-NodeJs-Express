@@ -8,7 +8,7 @@ Route
   .get('/cek', BookController.getIndex)
   .get('/', BookController.getBooks)
   .get('/lah/:bookid', BookController.getBorrows)
-  .get('/name/:name', BookController.nameBook)
+  .get('/name', BookController.nameBook)
   .get('/:bookid', BookController.bookId)
   .get('/category/:category', BookController.bookCategory)
   .get('/location/:location', BookController.bookLocation)
