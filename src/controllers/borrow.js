@@ -25,8 +25,12 @@ module.exports = {
 
     patchBorrow: (req, res) => {
         const bookid = req.params.bookid;
+        let denda = 0;
+        if (req.body.denda > 0) {
+          denda=req.body.denda
+        }
         const data = {
-          denda:req.body.denda,
+          denda:denda,
           tanggal_kembali: new Date()
         }
   
